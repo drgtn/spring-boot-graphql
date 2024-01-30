@@ -1,0 +1,8 @@
+#All available queries on this graphql server
+type Query{
+    getBankAccount(id:ID):BankAccount
+    getAllBankAccounts: [BankAccount]
+    getPaginatedBankAccounts(first: Int, after: String): BankAccountConnection
+
+
+}

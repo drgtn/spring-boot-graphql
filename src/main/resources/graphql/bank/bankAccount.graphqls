@@ -1,0 +1,25 @@
+#All available queries on this graphql server
+type BankAccount{
+    id: ID!
+    client: Client!
+    currency: Currency!
+    createdOn: Date
+    createdAt:DateTime
+}
+
+type BankAccountConnection {
+    edges: [BankAccountEdge]!
+    pageInfo: PageInfo!
+}
+
+type BankAccountEdge {
+    node: BankAccount!
+    cursor: String!
+}
+
+type PageInfo {
+    hasPreviousPage: Boolean!
+    hasNextPage: Boolean!
+    startCursor: String
+    endCursor: String
+}

@@ -1,0 +1,7 @@
+#All available queries on this graphql server
+scalar NonNegativeInt
+scalar Date
+scalar DateTime
+type Mutation{
+    updateBankAccount(input:BankAccountDto):BankAccount
+}

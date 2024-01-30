@@ -1,0 +1,7 @@
+#All available queries on this graphql server
+input BankAccountDto{
+    id: ID
+    lastName: String!
+    age: NonNegativeInt
+}
+

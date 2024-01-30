@@ -1,0 +1,5 @@
+spring:
+  graphql:
+    graphiql:
+      path: /graphiql
+      enabled: 'true'
